@@ -1,0 +1,26 @@
+.winnerwrapper {
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winner {
+    width: 60%;
+    height: 60%;
+    border: 5px solid black;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.winneritem {
+    width: 100%;
+}

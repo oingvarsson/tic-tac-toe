@@ -7,11 +7,12 @@ const Square = ({column, row, token}) => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
+    if (token!=='') return;
     dispatch(placePlayer({column, row, token: 'O' }))
   };
 
   return (
-    <div className='square' onClick={handleClick}>
+    <div style={{cursor: token==='' ? 'pointer' : 'not-allowed'}} className='square' onClick={handleClick}>
       {token}
     </div>
   )
