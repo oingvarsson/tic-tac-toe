@@ -56,7 +56,6 @@ const minimax = (board, depth, maximizing, alpha = -Infinity, beta = Infinity) =
     }
     return minEval;
   }
-
 };
 
 const findBestMove = (player, state) => {
